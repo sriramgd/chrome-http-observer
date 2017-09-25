@@ -1,0 +1,14 @@
+Add readme
+Show charts contextual
+Show webNavigation events
+Show webRequest events
+Better UI
+Settings - how long before rollover, length of response wait, initial window sizes?, search agent
+Search for text
+Uncompress javascript and css
+Test other http requests besides GET and POST
+Only two buttons - record (bi-state) and clear
+Do some perf tests - 1000 requests, 10000 requests, 100000 requests
+Clean up code
+Tests so long term fixes are easy?
+Take backup of source

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<div class="container" id="outerContainer">
+  <!-- <h4 class="title">Http View</h4> -->
+  <h6 class="title"></h6>
+  <div class="row first-row">
+    <div class="column">
+      <div class="row actions-row">
+        <div class="column actions">
+          <button id="recordbutton" class="button">&#9711; Record</button>
+          <button id="stopbutton" class="button">&#10072;&#10072; Pause</button>
+          <button id="clearbutton" class="button">&#9587; Clear</button>
+          <span>
+            <input id="toggleNetworkCache" type="checkbox" checked="checked">
+            <label class="label-inline" for="toggleNetworkCache">No Cache</label>
+        </span>
+        </div>
+        <div class="column progress">
+          <div class="column charts">
+            <button id="openChart" class="button">&#9881; Summary</button>
+          </div>
+          <button id="progressText" class="button-clear">
+            Recording...
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row second-row">
+    <div class="column actions">
+      <input id="url-full" type="text" value="" readonly>
+      <button id="copy-as-string" class="button">Copy url</button>
+      <button id="copy-as-json" class="button">Copy json</button>
+    </div>
+  </div>
+  <div class="row third-row">
+    <div class="column scrollable request-groupings">
+      <h5 id="requests-header">Requests</h5>
+      <table id="request-table">
+        <thead>
+          <tr>
+            <th id="requestTableId" class="sortable" data-sort-order="none">Id<span class="sortind"></span></th>
+            <th id="requestTableMethod" class="sortable" data-sort-order="none">Verb<span class="sortind"></span></th>
+            <th id="requestTableUrl" class="sortable" data-sort-order="none">Url<span class="sortind"></span></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="column scrollable cookie-container">
+      <h5>Cookies.&nbsp;<span id="cookieInfo"></span></h5>
+      <table id="cookie-table">
+        <thead>
+          <tr>
+            <th id="cookieTableSize" class="sortable" data-sort-order="none">name (bytes)<span class="sortind"></span></th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cookie-cell">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row fourth-row">
+    <div class="column scrollable request-details">
+      <h5>Request/Response headers and info</h5>
+      <table id="request-response-headers">
+        <thead>
+          <tr>
+            <th id="headersTableHeader" class="sortable" data-sort-order="none">Header<span class="sortind"></span></th>
+            <th id="headersTableRequest" class="sortable" data-sort-order="none">Type<span class="sortind"></span></th>
+            <th id="headersTableValue" class="sortable" data-sort-order="none">Value<span class="sortind"></span></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <table id="other-request-info">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="column scrollable response-details">
+      <h5>Response Details</h5>
+      <table id="response-body">
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="overlay" style=""></div>
+
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+-->
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="milligram.css">
+<link rel="stylesheet" href="main.css">
+<script src="feature.js"></script>
+</body>
