@@ -2,7 +2,7 @@
 * Http observer v1.3.0
 * http://www.sgdevs.com
 *
-* Copyright (c) 2017 sgdevs
+* Copyright (c) 2017 sriramgd
 * Licensed under the MIT license
 */
 
